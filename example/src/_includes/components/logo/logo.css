@@ -1,0 +1,8 @@
+.logo {
+  display: inline-block;
+  text-transform: uppercase;
+  letter-spacing: 0.25em;
+  font: 150%/1 monospace;
+  text-decoration: none;
+  color: inherit;
+}

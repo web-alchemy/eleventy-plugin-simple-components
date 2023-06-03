@@ -1,0 +1,13 @@
+{% component 'base-layout' %}
+  <h1>Articles List</h1>
+
+  <ul>
+    {% for article in articlesList %}
+      <li>
+        <a href="{{ article.link }}">
+          {{ article.title }}
+        </a>
+      </li>
+    {% endfor %}
+  </ul>
+{% endcomponent %}

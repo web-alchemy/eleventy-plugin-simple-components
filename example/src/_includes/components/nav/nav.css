@@ -1,0 +1,15 @@
+.nav {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  align-items: baseline;
+  gap: 1em;
+}
+
+.nav__link {
+  display: block;
+  padding: calc(12 / 16 * 1em);
+  text-decoration: none;
+  color: inherit;
+}

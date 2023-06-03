@@ -1,0 +1,13 @@
+{% component 'page', { title: $props.title } %}
+  {% component 'header' %}
+  {% endcomponent %}
+
+  <main>
+    {% component 'container' %}
+      {{ content | safe }}
+    {% endcomponent %}
+  </main>
+
+  {% component 'footer', { date: 2023 } %}
+  {% endcomponent %}
+{% endcomponent %}

@@ -1,0 +1,10 @@
+{% component 'base-layout', { title: title } %}
+  <article>
+    <header>
+      <h1>{{ title }}</h1>
+    </header>
+    <div>
+      {{ content() | safe }}
+    </div>
+  </article>
+{% endcomponent %}

@@ -1,0 +1,15 @@
+<header class="header">
+  {% component 'container', { class: 'header__inner'} %}
+    {% component 'logo' %}
+    {% endcomponent %}
+
+    {% component 'nav', {
+      items: [
+        { text: 'Home', link: '/' },
+        { text: 'Articles', link: '/articles/' },
+        { text: 'About', link: '/about/' }
+      ]
+    }%}
+    {% endcomponent %}
+  {% endcomponent %}
+</header>

@@ -1,0 +1,9 @@
+<ul class="nav">
+  {% for item in $props.items %}
+    <li>
+      <a class="nav__link" href="{{ item.link }}">
+        {{ item.text }}
+      </a>
+    </li>
+  {% endfor %}
+</ul>

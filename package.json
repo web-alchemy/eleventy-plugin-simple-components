@@ -1,0 +1,35 @@
+{
+  "name": "@web-alchemy/eleventy-plugin-simple-components",
+  "version": "0.0.0",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/web-alchemy/eleventy-plugin-simple-components.git"
+  },
+  "bugs": {
+    "url": "https://github.com/web-alchemy/eleventy-plugin-simple-components/issues"
+  },
+  "homepage": "https://github.com/web-alchemy/eleventy-plugin-simple-components",
+  "main": ".eleventy.js",
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "postpublish": "git push origin --all; git push origin --tags",
+    "postversion": "npm publish",
+    "preversion": "npm test",
+    "test": "echo \"No test specified\" && exit 0"
+  },
+  "peerDependencies": {
+    "@11ty/eleventy": "*",
+    "nunjucks": "*"
+  },
+  "keywords": [
+    "eleventy",
+    "eleventy-plugin",
+    "nunjucks",
+    "component"
+  ],
+  "dependencies": {
+    "linkedom": "^0.14.26"
+  }
+}
