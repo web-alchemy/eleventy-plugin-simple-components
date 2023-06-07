@@ -41,7 +41,7 @@ module.exports = function(eleventyConfig, userOptions = {}) {
 
   const nunjucksEnvironment = new Nunjucks.Environment(
     new Nunjucks.FileSystemLoader(includesPath),
-    // new Nunjucks.FileSystemLoader(layoutsPaths)
+    new Nunjucks.FileSystemLoader(layoutsPaths)
   );
 
   eleventyConfig.on('eleventy.before', () => {
